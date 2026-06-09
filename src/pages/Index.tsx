@@ -4,6 +4,7 @@ import PulsingCircle from "@/components/PulsingCircle"
 import Header from "@/components/Header"
 import Catalog from "@/components/Catalog"
 import ComputerProducts from "@/components/ComputerProducts"
+import AccessoryProducts from "@/components/AccessoryProducts"
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       </ShaderBackground>
       <Catalog />
       <ComputerProducts />
+      <AccessoryProducts />
     </>
   )
 }
