@@ -26,6 +26,33 @@ const computers = [
     badge: "Топ выбор",
     image: "https://cdn.poehali.dev/projects/42e631e5-d21d-4d8a-947b-dd168eb85e20/files/d6fa2516-522a-4551-92a7-8820b0ee5a28.jpg",
   },
+  {
+    id: 4,
+    name: "MiniPC Compact S1",
+    description: "Intel Core i5 · Intel UHD · 16 ГБ RAM · 512 ГБ SSD",
+    price: "84 990 ₽",
+    oldPrice: "94 990 ₽",
+    badge: "Компакт",
+    image: "https://cdn.poehali.dev/projects/42e631e5-d21d-4d8a-947b-dd168eb85e20/files/e0aaa5b1-32f2-4e18-a483-fe5c145f5be1.jpg",
+  },
+  {
+    id: 5,
+    name: "ArcticPro RGB White",
+    description: "AMD Ryzen 7 · RTX 4070 · 32 ГБ RAM · 1 ТБ SSD",
+    price: "159 990 ₽",
+    oldPrice: null,
+    badge: "Лимитед",
+    image: "https://cdn.poehali.dev/projects/42e631e5-d21d-4d8a-947b-dd168eb85e20/files/10fe3c2a-7829-40e6-a086-031159a3f7f2.jpg",
+  },
+  {
+    id: 6,
+    name: "ServerPro Dual Xeon",
+    description: "2× Intel Xeon · 128 ГБ ECC RAM · 8 ТБ NVMe RAID",
+    price: "449 990 ₽",
+    oldPrice: "499 990 ₽",
+    badge: "Профи",
+    image: "https://cdn.poehali.dev/projects/42e631e5-d21d-4d8a-947b-dd168eb85e20/files/93d15400-fcc4-4aa8-be13-14a35effbe64.jpg",
+  },
 ]
 
 export default function ComputerProducts() {
@@ -42,7 +69,6 @@ export default function ComputerProducts() {
               key={pc.id}
               className="group rounded-2xl bg-white/5 border border-white/10 hover:border-white/25 overflow-hidden transition-all duration-300"
             >
-              {/* Image */}
               <div className="relative overflow-hidden h-52 bg-white/5">
                 <img
                   src={pc.image}
@@ -55,8 +81,6 @@ export default function ComputerProducts() {
                   </span>
                 )}
               </div>
-
-              {/* Info */}
               <div className="p-5">
                 <h3 className="text-white font-medium text-sm mb-1">{pc.name}</h3>
                 <p className="text-white/40 text-xs leading-relaxed mb-4">{pc.description}</p>

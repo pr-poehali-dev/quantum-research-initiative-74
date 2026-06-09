@@ -6,6 +6,7 @@ import Catalog from "@/components/Catalog"
 import ComputerProducts from "@/components/ComputerProducts"
 import AccessoryProducts from "@/components/AccessoryProducts"
 import Deals from "@/components/Deals"
+import Contacts from "@/components/Contacts"
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <Deals />
       <ComputerProducts />
       <AccessoryProducts />
+      <Contacts />
     </>
   )
 }
